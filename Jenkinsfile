@@ -8,6 +8,6 @@ node {
                 error "'nobuild' spotted in git commit. Aborting."
             }
         }
+        echo "hello"
     }
-    echo "hello"
 }
