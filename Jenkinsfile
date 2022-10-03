@@ -6,7 +6,8 @@ node {
     result = sh (script: "git log -1 | egrep 'nobuild:.*'", returnStatus: true)
     if (result == 0) {
         currentBuild.result = 'NOT_BUILT'
-        error "'nobuild' spotted in git commit. Aborting."
+        echo "'nobuild' spotted in git commit. Aborting."
+        return
     }
 
     stage 'meow'
