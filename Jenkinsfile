@@ -9,9 +9,5 @@ node {
             }
         }
     }
-    stage('Did we get past the abort?') {
-        script {
-            sh (echo "yes")
-        }
-    }
+    echo "hello"
 }
