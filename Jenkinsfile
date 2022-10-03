@@ -10,5 +10,5 @@ node {
     }
 
     stage 'meow'
-    echo 'oh no'
+    echo 'oh no!'
 }
