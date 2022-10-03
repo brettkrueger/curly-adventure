@@ -6,8 +6,9 @@ node {
             if (result == 0) {
                 currentBuild.result = 'NOT_BUILT'
                 error "'nobuild' spotted in git commit. Aborting."
+            } else {
+                echo "Hello?"
             }
         }
-        echo "hello"
     }
 }
