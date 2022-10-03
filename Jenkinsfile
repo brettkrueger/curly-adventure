@@ -9,7 +9,4 @@ node {
             }
         }
     }
-    stage('testing') {
-        echo 'hello'
-    }
 }
