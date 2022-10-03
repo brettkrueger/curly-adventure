@@ -11,7 +11,7 @@ node {
     }
     stage('Did we get past the abort?') {
         script {
-            echo ("yes")
+            sh (echo "yes")
         }
     }
 }
