@@ -1,5 +1,5 @@
 #!groovy
-node ("docker") {
+node {
     stage('Abort build: Check for nobuild conventional commit') {
         script {
             result = sh (script: "git log -1 ${GIT_COMMIT} | egrep 'nobuild:.*'", returnStatus: true)
